@@ -59,7 +59,7 @@ const Features = () => {
             <img src={pic3} alt="img" />
           </div>
           <div className=" space-y-3">
-            <h1 className=" font-semibold text-xl">💌Affordable prices</h1>
+            <h1 className=" font-semibold text-xl">💰Affordable prices</h1>
             <p className=" text-[#898888]">
               We provide our services & packages Affordable & pocket friendly prices for our customers.
             </p>

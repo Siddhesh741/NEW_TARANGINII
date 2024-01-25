@@ -186,7 +186,9 @@ const Footer = ({ Rating, backgroundColor }) => {
         <p>
           <p className=" text-center py-4">
             {new Date().getFullYear()} @copyright developed by
-            <span className=" text-brightColor"> Taranginii Agro Farm ™️  </span> | All
+            <a a href="https://www.instagram.com/taranginiiagrofarms?igsh=b3J5OHVzcGFwbTVh"
+              target="_blank">
+            <span className=" text-brightColor"> Taranginii Agro Farm ™️  </span> </a>| All
             rights reserved !!!
           </p>
         </p>

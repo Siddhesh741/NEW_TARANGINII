@@ -8,12 +8,12 @@ const About = () => {
   return (
     <div className=" min-h-screen flex flex-col justify-center lg:flex-row items-center md:px-32 px-5 bg-darkBackground gap-10">
       <div className=" w-full lg:w-2/4 space-y-5">
-        <h1 className=" font-semibold text-4xl text-start text-white leading-tight">
+        <h1 className=" font-semibold text-4xl text-start text-white leading-tight" style={{ fontFamily: 'italic' }}>
           At Taranginii agro Farm, we are ready to provide you with the best prewedding experience in your life!
         </h1>
 
         < p className=" text-1xl  text-lightweight text-start text-white leading-tight">
-          "Your dream prewedding shoot awaits, and we're here to make it a reality"
+          "Your dream prewedding shoot awaits, and we're here to make it a reality <br></br> 20+ Variety of Sets at one location set by natural paradise At VEER DAM backwater"
         </p>
         <div className=" flex flex-row gap-10"></div>
         <Link to="contact" spy={true} smooth={true} duration={500}>
