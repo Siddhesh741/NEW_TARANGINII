@@ -1,0 +1,15 @@
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #ff0000; /* Adjust the background color as needed */
+    color: #fff;
+    font-size: 35px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

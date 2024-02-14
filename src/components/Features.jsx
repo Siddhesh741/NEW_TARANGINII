@@ -23,7 +23,7 @@ const Features = () => {
 
         <div className="w-full lg:w-3/5 mt-10 lg:ml-14">
           <img
-            className=" rounded-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            className=" rounded-2xl shadow-[0_30px_100px_rgba(127,_255,_212)]"
             src={img}
             alt="img"
           />
@@ -72,7 +72,7 @@ const Features = () => {
           <div className=" space-y-3">
             <h1 className=" font-semibold text-xl">⭐Provide many Facilities</h1>
             <p className=" text-[#898888]">
-              We provide to our customer excellent Facilities like the changing room, water ,snacks, washroom with hygiene.
+              We provide to our customer excellent Facilities like the changing room, snacks, washroom with hygiene.
             </p>
             </div>
             </div>

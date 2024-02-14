@@ -1,13 +1,36 @@
-import React from "react";
+import React,  { useState, useEffect } from "react";
 import { Bs0Circle, Bs1SquareFill, Bs2CircleFill, BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { Ri4KFill, RiTwitterXFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
 import { Link } from "react-scroll";
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink,animateScroll as scroll } from 'react-scroll';
+import '../components/Footer.css';
 
 const Footer = ({ Rating, backgroundColor }) => {
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkScrollTop);
+    return () => {
+      window.removeEventListener('scroll', checkScrollTop);
+    };
+  }, []);
+
+  const checkScrollTop = () => {
+    if (window.pageYOffset > 100) {
+      setShowScroll(true);
+    } else {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div className="bg-darkBackground text-white">
+      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15133.120213301532!2d73.8367341461935!3d18.516242458490296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c12c701716d9%3A0xb1164911dc038a4c!2sDeccan%20Bus%20stop!5e0!3m2!1sen!2sin!4v1706288504711!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
 
@@ -188,12 +211,19 @@ const Footer = ({ Rating, backgroundColor }) => {
             {new Date().getFullYear()} @copyright developed by
             <a a href="https://www.instagram.com/taranginiiagrofarms?igsh=b3J5OHVzcGFwbTVh"
               target="_blank">
-            <span className=" text-brightColor"> Taranginii Agro Farm ™️  </span> </a>| All
-            rights reserved !!!
+            <span className=" text-brightColor"> Taranginii Agro Farm ™️  </span> </a>| All rights reserved !!!
           </p>
         </p>
       </div>
+      {showScroll && (
+        <div className="scroll-to-top" onClick={scrollToTop}>
+          {/* You can use any arrow icon of your choice here */}
+          <span><h3>&#11014;</h3></span>
+        </div>
+      )}
+
     </div>
+    
   );
 };
 

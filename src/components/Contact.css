@@ -1,0 +1,24 @@
+/* Target the disabled input field */
+input[disabled] {
+    /* Override the default disabled styles */
+    opacity: 1; /* Set opacity to make it fully visible */
+    cursor: default; /* Set cursor to default */
+    pointer-events: none; /* Disable pointer events to prevent interaction */
+    background-color: #f3f4f6; /* Set a background color to distinguish it */
+    border: 1px solid #d1d5db; /* Add a border to maintain consistency */
+  }
+ 
+input.has-value::placeholder {
+    background-color:rgb(255, 0, 0); /* Set your desired color */
+}
+.center-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

@@ -7,8 +7,9 @@ import DestinationCard from "../layouts/DestinationCard";
 
 const Destination = () => {
   return (
+    
     <div className=" min-h-screen flex flex-col justify-center md:mx-32 mx-5">
-      <h1 className=" font-medium text-center text-4xl lg:mt-0 mt-16">
+      <h1 className=" font-medium text-center text-4xl lg:mt-0 mt-16  rounded-xl shadow-[0_10px_50px_rgba(10,_1,_184,_0.5)]">
         Most Popular Set
       </h1>
 
